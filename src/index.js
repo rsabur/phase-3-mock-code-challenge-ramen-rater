@@ -75,12 +75,12 @@ ramenForm.addEventListener('submit', event => {
             "Content-Type": "application/json",
             "Accept": "application/json"
         },
-        body: JSON.stringify(rating, comment)
+        body: JSON.stringify({rating, comment})
     })
-        .then(resp => resp.json())
-        .then(data => {
-            console.log(data)
-        })
+        // .then(resp => resp.json())
+        // .then(data => {
+        //     console.log(data)
+        // })
 })
 
 
